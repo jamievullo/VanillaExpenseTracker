@@ -7,15 +7,33 @@
 </head>
 <body>
     
-    <div id="title">Expense Tracker</div>
+    <h1 id="title">Expense Tracker</h1>
 
-    <div id="expense-date"></div>
-    <div id="expense-description"></div>
-    <div id="expense-location"></div>
-    <div id="expense-amount"></div>
-    <button id="add-expense"></button>
+    <div id="form-box">
+        <form>
+            <div id="expense-date">
+                Date:<input type="date" name="date">
+            </div>
+            <div id="expense-description">
+                Expense Description:<input type="number" name="expense-name" placeholder="What did you buy?">
+            </div>
+            <div id="expense-location">
+                Bought From:<input type="text" name="location" placeholder="Name of Store">
+            </div>
+            <div id="expense-amount">
+                Amount:<input type="number" name="expense-amount" placeholder="$ Total Spent">
+            </div>
+        </form>
+    </div>
+    <button id="add-expense">Add Expense</button>
 
-    <table id="all-expenses"></table>
+    <table id="all-expenses">
+        <tr>
+            <th id="date" class="center">Date</th>
+            <th id="expense">Expense</th>
+            <th style="text-align: right" id="amount">Amount</th>
+        </tr>
+    </table>
 
 
     <script src="app.js"></script>
