@@ -5,37 +5,40 @@
     <title>VanillaExpenseTracker</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    
-    <h1 id="title">Expense Tracker</h1>
+    <body>
+        
+        <h1 id="title">Expense Trekker</h1>
 
-    <div id="form-box">
-        <form>
-            <div id="expense-date">
-                Date:<input type="date" name="date">
-            </div>
-            <div id="expense-description">
-                Expense Description:<input type="number" name="expense-name" placeholder="What did you buy?">
-            </div>
-            <div id="expense-location">
-                Bought From:<input type="text" name="location" placeholder="Name of Store">
-            </div>
-            <div id="expense-amount">
-                Amount:<input type="number" name="expense-amount" placeholder="$ Total Spent">
-            </div>
-        </form>
-    </div>
-    <button id="add-expense">Add Expense</button>
+        <div id="form-box">
+            <form>
+                <div id="expense-date">
+                    Date:<input type="date" name="expense-date">
+                </div>
+                <div id="expense-description">
+                    Expense Description:<input type="text" name="expense-name" placeholder="What did you buy?">
+                </div>
+                <div id="expense-location">
+                    Bought From:<input type="text" name="location" placeholder="Name of Store">
+                </div>
+                <div id="expense-amount">
+                    Amount:<input type="number" name="expense-amount" placeholder="$ Total Spent">
+                </div>
+            </form>
+        </div>
+        <button type="submit" id="submit-expense">Add Expense</button>
 
-    <table id="all-expenses">
-        <tr>
-            <th id="date" class="center">Date</th>
-            <th id="expense">Expense</th>
-            <th style="text-align: right" id="amount">Amount</th>
-        </tr>
-    </table>
+        <table id="all-expenses">
+            <tr>
+                <th id="date" class="center">Date</th>
+                <th id="expense">Expense</th>
+                <th id="location">Location</th>
+                <th style="text-align: right" id="amount">Amount</th>
+                <tr id=if-empty>
+                    <td colspan="4">New expenses will be listed here!</td>
+                </tr>
+            </tr>
+        </table>
 
-
-    <script src="app.js"></script>
-</body>
+        <script src="app.js"></script>
+    </body>
 </html>
