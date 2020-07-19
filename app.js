@@ -46,3 +46,7 @@ function deleteExpense(deleteButton, expenseRow) {
         expenseRow.remove()
     })
 }
+
+function sumExpenses() {
+    // would like to add total of all expenses
+}
